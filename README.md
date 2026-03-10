@@ -1,11 +1,11 @@
-UPI Digital Payment Trend & Fraud Analysis
-Project Overview
+# UPI Digital Payment Trend & Fraud Analysis
+## Project Overview
 
-This project analyzes digital payment trends and detects possible fraud patterns in Unified Payments Interface (UPI) transactions using data analysis techniques.
+**This project analyzes digital payment trends and detects possible fraud patterns in Unified Payments Interface (UPI) transactions using data analysis techniques.**
 
-The goal is to understand transaction behavior and identify suspicious activities using Exploratory Data Analysis (EDA), risk scoring, and visualization.
+**The goal is to understand transaction behavior and identify suspicious activities using Exploratory Data Analysis (EDA), risk scoring, and visualization.**
 
-Objectives
+### Objectives
 
 Analyze digital payment trends.
 
@@ -15,7 +15,7 @@ Build a risk scoring system to flag suspicious transactions.
 
 Generate business insights from transaction data.
 
-Dataset Features
+### Dataset Features
 
 The dataset includes the following columns:
 
@@ -35,7 +35,7 @@ time – Transaction timestamp
 
 is_fraud – Fraud label (0 = Legitimate, 1 = Fraud)
 
-Tools & Technologies
+### Tools & Technologies
 
 Python
 
@@ -53,8 +53,8 @@ Matplotlib
 
 Seaborn
 
-Project Workflow
-1. Data Cleaning
+## Project Workflow
+### 1. Data Cleaning
 
 Handling missing values
 
@@ -62,7 +62,7 @@ Correcting data types
 
 Removing duplicates
 
-2. Exploratory Data Analysis (EDA)
+### 2. Exploratory Data Analysis (EDA)
 
 Transaction distribution analysis
 
@@ -70,7 +70,7 @@ Fraud vs Non-fraud comparison
 
 Time-based transaction patterns
 
-3. Feature Engineering
+### 3. Feature Engineering
 
 Created new features such as:
 
@@ -78,7 +78,7 @@ Transaction hour
 
 Risk score
 
-Example:
+### Example:
 
 df['risk_score'] = 0
 
@@ -89,7 +89,7 @@ df['hour'] = pd.to_datetime(df['time']).dt.hour
 df.loc[(df['hour'] >= 0) & (df['hour'] <= 5), 'risk_score'] += 1
 Data Visualization
 
-Key visualizations created:
+## Key visualizations created:
 
 Transaction amount distribution
 
@@ -101,7 +101,7 @@ Failed attempt analysis
 
 Dashboards can also be built using Tableau.
 
-Key Insights
+## Key Insights
 
 High-value transactions have a higher fraud risk.
 
@@ -111,7 +111,7 @@ Late-night transactions show unusual patterns.
 
 Certain locations and devices show higher fraud frequency.
 
-Business Recommendations
+## Business Recommendations
 
 Implement real-time fraud monitoring systems.
 
@@ -121,7 +121,7 @@ Monitor late-night transactions more carefully.
 
 Use machine learning models for automated fraud detection.
 
-Future Improvements
+## Future Improvements
 
 Build fraud prediction models using machine learning.
 
@@ -129,8 +129,8 @@ Deploy a fraud detection system using Flask.
 
 Create interactive dashboards using Power BI or Tableau.
 
-Author
-
-Pratiksha Bagwale Zagade
-
-Aspiring Data Analyst focused on building real-world data analysis projects.
+**Author**
+<br>
+**Pratiksha Bagwale Zagade**
+<br>
+**Aspiring Data Analyst focused on building real-world data analysis projects.**
